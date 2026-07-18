@@ -154,7 +154,7 @@
     ],
   };
 
-  let defaultIdx = 0;
+  let defaultResponseIndex = 0;
 
   function getResponse(message) {
     const lower = message.toLowerCase();
@@ -164,8 +164,8 @@
     if (/menu|dish|food|eat|course|tasting/.test(lower)) return responses.menu[0];
     if (/hour|open|time|when/.test(lower))              return responses.hours[0];
     if (/location|address|where|find|parking/.test(lower)) return responses.location[0];
-    const def = responses.default[defaultIdx % responses.default.length];
-    defaultIdx++;
+    const def = responses.default[defaultResponseIndex % responses.default.length];
+    defaultResponseIndex++;
     return def;
   }
 

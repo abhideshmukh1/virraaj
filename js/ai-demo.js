@@ -67,7 +67,7 @@
       return;
     }
 
-    ranked.forEach((dish, i) => {
+    ranked.forEach((dish, dishIndex) => {
       const item = document.createElement('div');
       item.className = 'rec-item';
       item.setAttribute('role', 'listitem');
@@ -83,7 +83,7 @@
       results.appendChild(item);
 
       // Staggered reveal animation
-      setTimeout(() => item.classList.add('visible'), i * 120 + 60);
+      setTimeout(() => item.classList.add('visible'), dishIndex * 120 + 60);
     });
   }
 
