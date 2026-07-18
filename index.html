@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Virraaj – An immersive fine dining experience celebrating the rich culinary heritage of India with a contemporary vision." />
+  <title>Virraaj | Fine Dining</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ───────────────────────── NAVIGATION ───────────────────────── -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Virraaj home">
+        <span class="logo-text">VIRRAAJ</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#about"        class="nav-link">Our Story</a></li>
+        <li><a href="#menu"         class="nav-link">Menu</a></li>
+        <li><a href="#chef"         class="nav-link">Chef</a></li>
+        <li><a href="#gallery"      class="nav-link">Gallery</a></li>
+        <li><a href="#events"       class="nav-link">Events</a></li>
+        <li><a href="#reservations" class="nav-link nav-cta">Reserve a Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ───────────────────────── HERO ───────────────────────── -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">An Extraordinary Dining Experience</p>
+      <h1 class="hero-title">VIRRAAJ</h1>
+      <p class="hero-subtitle">Where Heritage Meets Artistry</p>
+      <div class="hero-divider" aria-hidden="true"></div>
+      <p class="hero-tagline">
+        A symphony of ancient spices, seasonal ingredients, and modern culinary craft<br/>
+        in the heart of the city.
+      </p>
+      <div class="hero-actions">
+        <a href="#reservations" class="btn btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn btn-ghost">Explore Menu</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+      <span class="scroll-down__arrow"></span>
+    </a>
+  </section>
+
+  <!-- ───────────────────────── ABOUT ───────────────────────── -->
+  <section class="section about" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Story</span>
+        <h2 class="section-title" id="about-heading">A Legacy of Flavour</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image" role="img" aria-label="Interior of Virraaj restaurant"></div>
+          <div class="about-badge">
+            <span class="badge-year">Est.</span>
+            <span class="badge-num">2024</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3 class="about-subtitle">Born from Passion, Rooted in Tradition</h3>
+          <p>
+            Virraaj is more than a restaurant — it is a love letter to the subcontinent's extraordinary culinary tapestry.
+            Our chefs travel the length and breadth of India sourcing heirloom grains, hand-ground spice blends, and
+            age-old recipes passed down through generations.
+          </p>
+          <p>
+            Every plate is a canvas. We reimagine classical Indian cooking through the lens of modern gastronomy —
+            preserving the soul of each dish while elevating it with contemporary technique, seasonal produce, and
+            breathtaking presentation.
+          </p>
+          <p>
+            Step inside and let your senses wander. From the lingering perfume of slow-braised lamb to the delicate
+            sweetness of saffron-kissed desserts, a meal at Virraaj is an immersive journey you will carry with you long after the last course.
+          </p>
+          <div class="about-stats" role="list">
+            <div class="stat" role="listitem">
+              <span class="stat-num">12+</span>
+              <span class="stat-label">Heirloom Spices</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-num">7</span>
+              <span class="stat-label">Tasting Courses</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Awards Won</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── PHILOSOPHY ───────────────────────── -->
+  <section class="philosophy" aria-labelledby="philosophy-heading">
+    <div class="philosophy-inner">
+      <blockquote class="philosophy-quote">
+        <p id="philosophy-heading">"Food is memory. Every spice tells a story, every bite a homecoming."</p>
+        <footer>— Chef Arjun Mehta, Executive Chef &amp; Co-Founder</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── MENU ───────────────────────── -->
+  <section class="section menu" id="menu" aria-labelledby="menu-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curated Selections</span>
+        <h2 class="section-title" id="menu-heading">Our Menu</h2>
+      </div>
+
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" role="tab" aria-selected="true"  aria-controls="tab-tasting"  id="btn-tasting">Tasting Menu</button>
+        <button class="menu-tab"        role="tab" aria-selected="false" aria-controls="tab-a-la-carte" id="btn-alacarte">À La Carte</button>
+        <button class="menu-tab"        role="tab" aria-selected="false" aria-controls="tab-drinks"   id="btn-drinks">Drinks</button>
+      </div>
+
+      <!-- Tasting Menu -->
+      <div class="menu-panel active" id="tab-tasting" role="tabpanel" aria-labelledby="btn-tasting">
+        <p class="menu-panel-intro">
+          Seven curated courses that unfold the story of India — from the coasts of Kerala to the royal kitchens of Rajasthan.
+          <strong>₹ 4,800 per person</strong> · Wine pairing available at <strong>₹ 2,200</strong>.
+        </p>
+        <ol class="tasting-courses" aria-label="Seven-course tasting menu">
+          <li class="course">
+            <div class="course-num" aria-hidden="true">01</div>
+            <div class="course-info">
+              <h4>Amuse-Bouche</h4>
+              <p>Pani puri sphere · tamarind water gel · mint foam</p>
+            </div>
+          </li>
+          <li class="course">
+            <div class="course-num" aria-hidden="true">02</div>
+            <div class="course-info">
+              <h4>Cold Appetiser</h4>
+              <p>Ceviche of king prawns · raw mango · kokum water · crisp papadum</p>
+            </div>
+          </li>
+          <li class="course">
+            <div class="course-num" aria-hidden="true">03</div>
+            <div class="course-info">
+              <h4>Warm Appetiser</h4>
+              <p>Chicken tikka galouti · smoked butter · rose petal chutney · paratha tuile</p>
+            </div>
+          </li>
+          <li class="course">
+            <div class="course-num" aria-hidden="true">04</div>
+            <div class="course-info">
+              <h4>Soup</h4>
+              <p>Mulligatawny velouté · lemon oil · pickled ginger · coriander cress</p>
+            </div>
+          </li>
+          <li class="course">
+            <div class="course-num" aria-hidden="true">05</div>
+            <div class="course-info">
+              <h4>Main</h4>
+              <p>48-hour slow-braised lamb raan · fenugreek jus · saffron polenta · charred broccoli</p>
+            </div>
+          </li>
+          <li class="course">
+            <div class="course-num" aria-hidden="true">06</div>
+            <div class="course-info">
+              <h4>Pre-Dessert</h4>
+              <p>Cardamom panna cotta · rosewater granita · pistachio crumble</p>
+            </div>
+          </li>
+          <li class="course">
+            <div class="course-num" aria-hidden="true">07</div>
+            <div class="course-info">
+              <h4>Dessert</h4>
+              <p>Dark chocolate &amp; black sesame tart · saffron ice cream · gold leaf</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- À La Carte -->
+      <div class="menu-panel" id="tab-a-la-carte" role="tabpanel" aria-labelledby="btn-alacarte" hidden>
+        <div class="alacarte-grid">
+          <div class="alacarte-section">
+            <h3>Starters</h3>
+            <ul class="dish-list" role="list">
+              <li class="dish" role="listitem">
+                <div class="dish-name">Burrata Chaat <span class="dish-tag">V</span></div>
+                <div class="dish-desc">Heritage tomatoes · tamarind · pomegranate · sev</div>
+                <div class="dish-price">₹ 780</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Scallop Tikka</div>
+                <div class="dish-desc">Hand-dived scallops · ajwain · celeriac purée · micro greens</div>
+                <div class="dish-price">₹ 1,250</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Dahi Kebab <span class="dish-tag">V</span></div>
+                <div class="dish-desc">Hung yogurt · truffle oil · walnut chutney</div>
+                <div class="dish-price">₹ 680</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Foie Gras Keema</div>
+                <div class="dish-desc">Duck foie gras · minced lamb · brioche pav</div>
+                <div class="dish-price">₹ 1,650</div>
+              </li>
+            </ul>
+          </div>
+          <div class="alacarte-section">
+            <h3>Mains</h3>
+            <ul class="dish-list" role="list">
+              <li class="dish" role="listitem">
+                <div class="dish-name">Dal Makhani Risotto <span class="dish-tag">V</span></div>
+                <div class="dish-desc">Black lentil · smoked butter · parmesan · crispy shallot</div>
+                <div class="dish-price">₹ 980</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Wild Sea Bass</div>
+                <div class="dish-desc">Goan curry sauce · coconut rice · pickled cucumber</div>
+                <div class="dish-price">₹ 1,850</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Lamb Rogan Josh Wellington</div>
+                <div class="dish-desc">Spiced minced lamb · pastry crust · mint raita</div>
+                <div class="dish-price">₹ 2,100</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Paneer Royale <span class="dish-tag">V</span></div>
+                <div class="dish-desc">Smoked paneer · makhani sauce · saffron naan</div>
+                <div class="dish-price">₹ 1,100</div>
+              </li>
+            </ul>
+          </div>
+          <div class="alacarte-section">
+            <h3>Desserts</h3>
+            <ul class="dish-list" role="list">
+              <li class="dish" role="listitem">
+                <div class="dish-name">Gulab Jamun Fondant <span class="dish-tag">V</span></div>
+                <div class="dish-desc">Warm rose-syrup centre · vanilla kulfi</div>
+                <div class="dish-price">₹ 620</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Mango Soufflé <span class="dish-tag">V</span></div>
+                <div class="dish-desc">Alphonso mango · cardamom crème anglaise</div>
+                <div class="dish-price">₹ 720</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Petits Fours <span class="dish-tag">V</span></div>
+                <div class="dish-desc">Chai truffle · pistachio barfi · orange blossom madeleine</div>
+                <div class="dish-price">₹ 480</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="menu-note">V = Vegetarian · All prices are inclusive of taxes · Service charge of 10% will be added.</p>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-panel" id="tab-drinks" role="tabpanel" aria-labelledby="btn-drinks" hidden>
+        <div class="alacarte-grid">
+          <div class="alacarte-section">
+            <h3>Signature Cocktails</h3>
+            <ul class="dish-list" role="list">
+              <li class="dish" role="listitem">
+                <div class="dish-name">Maharaja's Garden</div>
+                <div class="dish-desc">Gin · rose water · cardamom syrup · lychee · pink grapefruit</div>
+                <div class="dish-price">₹ 850</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Spice Route</div>
+                <div class="dish-desc">Aged rum · star anise · tamarind · smoked salt rim</div>
+                <div class="dish-price">₹ 950</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Lotus Bloom</div>
+                <div class="dish-desc">Vodka · lotus root syrup · cucumber · elderflower</div>
+                <div class="dish-price">₹ 800</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Nimbu Negroni</div>
+                <div class="dish-desc">Gin · Campari · sweet vermouth · kaffir lime leaf</div>
+                <div class="dish-price">₹ 900</div>
+              </li>
+            </ul>
+          </div>
+          <div class="alacarte-section">
+            <h3>Mocktails</h3>
+            <ul class="dish-list" role="list">
+              <li class="dish" role="listitem">
+                <div class="dish-name">Saffron Sunrise</div>
+                <div class="dish-desc">Saffron · orange · mango · ginger ale</div>
+                <div class="dish-price">₹ 480</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Kokum Cooler</div>
+                <div class="dish-desc">Kokum · mint · sea salt · sparkling water</div>
+                <div class="dish-price">₹ 420</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Rose &amp; Basil Lemonade</div>
+                <div class="dish-desc">Fresh lemon · rose syrup · Thai basil · soda</div>
+                <div class="dish-price">₹ 380</div>
+              </li>
+            </ul>
+          </div>
+          <div class="alacarte-section">
+            <h3>Wine Selection</h3>
+            <ul class="dish-list" role="list">
+              <li class="dish" role="listitem">
+                <div class="dish-name">Sula Rasa Shiraz</div>
+                <div class="dish-desc">Nashik, Maharashtra · Dark fruit · spice · smooth tannins</div>
+                <div class="dish-price">₹ 1,200 / bottle</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">Grover Zampa Chardonnay</div>
+                <div class="dish-desc">Nandi Hills, Karnataka · Citrus · butter · minerality</div>
+                <div class="dish-price">₹ 1,400 / bottle</div>
+              </li>
+              <li class="dish" role="listitem">
+                <div class="dish-name">York Winery Sparkling</div>
+                <div class="dish-desc">Nashik · Fine bubbles · apple · toasted brioche</div>
+                <div class="dish-price">₹ 1,800 / bottle</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── CHEF ───────────────────────── -->
+  <section class="section chef" id="chef" aria-labelledby="chef-heading">
+    <div class="container chef-container">
+      <div class="chef-portrait" role="img" aria-label="Portrait of Chef Arjun Mehta"></div>
+      <div class="chef-bio">
+        <span class="section-tag">The Culinary Visionary</span>
+        <h2 class="section-title" id="chef-heading">Chef Arjun Mehta</h2>
+        <p class="chef-title">Executive Chef &amp; Co-Founder</p>
+        <p>
+          Chef Arjun Mehta brings over two decades of culinary mastery to Virraaj. Trained at the Culinary Institute
+          of America, he honed his craft in the kitchens of three-Michelin-starred restaurants across Paris, London, and
+          New York before returning to India with a singular mission — to redefine Indian fine dining on the world stage.
+        </p>
+        <p>
+          His philosophy is simple yet profound: respect the ingredient, honour the tradition, and dare to innovate.
+          Named one of <em>Food &amp; Wine</em>'s "Best New Chefs" and featured in <em>The World's 50 Best Restaurants</em>
+          spotlight, Chef Arjun's cuisine is poetry on a plate.
+        </p>
+        <ul class="chef-accolades" aria-label="Chef accolades">
+          <li>🏆 Best Chef — National Restaurant Awards 2025</li>
+          <li>⭐ Featured in Asia's 50 Best Restaurants 2025</li>
+          <li>📕 Author of <em>Masala Moderne</em> (2024)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── GALLERY ───────────────────────── -->
+  <section class="section gallery" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visual Feast</span>
+        <h2 class="section-title" id="gallery-heading">A Glimpse Inside</h2>
+      </div>
+      <div class="gallery-grid" role="list" aria-label="Restaurant gallery">
+        <div class="gallery-item gallery-item--large" role="listitem">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #3d2b1f 0%, #7a4f2e 50%, #c8956c 100%);" role="img" aria-label="Restaurant dining room at night"></div>
+          <div class="gallery-caption">The Dining Room</div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #1a3a2a 0%, #2d6a4f 50%, #74c69d 100%);" role="img" aria-label="Plated dish — burrata chaat"></div>
+          <div class="gallery-caption">Burrata Chaat</div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #4a1942 0%, #6a1e55 50%, #c9184a 100%);" role="img" aria-label="Chef at work in open kitchen"></div>
+          <div class="gallery-caption">Open Kitchen</div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #7a3e0a 0%, #c9622f 50%, #f4a261 100%);" role="img" aria-label="Lamb raan main course"></div>
+          <div class="gallery-caption">Lamb Raan</div>
+        </div>
+        <div class="gallery-item gallery-item--large" role="listitem">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #0d1b2a 0%, #1b2a4a 50%, #415a77 100%);" role="img" aria-label="Private dining suite"></div>
+          <div class="gallery-caption">Private Dining Suite</div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-img" style="background: linear-gradient(135deg, #2d2d2d 0%, #5a4a3a 50%, #c8b49a 100%);" role="img" aria-label="Dessert — chocolate sesame tart"></div>
+          <div class="gallery-caption">Chocolate Sesame Tart</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── EVENTS ───────────────────────── -->
+  <section class="section events" id="events" aria-labelledby="events-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Extraordinary Occasions</span>
+        <h2 class="section-title" id="events-heading">Private Events &amp; Experiences</h2>
+      </div>
+      <div class="events-grid">
+        <article class="event-card" aria-labelledby="event-private">
+          <div class="event-icon" aria-hidden="true">🕯️</div>
+          <h3 id="event-private">Private Dining</h3>
+          <p>Host intimate celebrations in our exclusive private suite accommodating up to 18 guests, with a bespoke menu curated just for you.</p>
+          <a href="#reservations" class="btn btn-outline">Enquire Now</a>
+        </article>
+        <article class="event-card" aria-labelledby="event-chef-table">
+          <div class="event-icon" aria-hidden="true">👨‍🍳</div>
+          <h3 id="event-chef-table">Chef's Table</h3>
+          <p>An intimate 6-seat table at the heart of our open kitchen. Watch Chef Arjun craft each dish live as you savour an unrepeatable 10-course journey.</p>
+          <a href="#reservations" class="btn btn-outline">Book Experience</a>
+        </article>
+        <article class="event-card" aria-labelledby="event-wine">
+          <div class="event-icon" aria-hidden="true">🍷</div>
+          <h3 id="event-wine">Wine &amp; Spice Pairing</h3>
+          <p>Monthly curated evenings pairing India's finest wines with our signature spice-forward dishes. Guided by our in-house sommelier.</p>
+          <a href="#reservations" class="btn btn-outline">Join Next Event</a>
+        </article>
+        <article class="event-card" aria-labelledby="event-corporate">
+          <div class="event-icon" aria-hidden="true">🏛️</div>
+          <h3 id="event-corporate">Corporate &amp; Social</h3>
+          <p>From product launches to anniversary dinners, our events team crafts seamless experiences for groups of 20 to 120 guests.</p>
+          <a href="#reservations" class="btn btn-outline">Get Proposal</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── RESERVATIONS ───────────────────────── -->
+  <section class="section reservations" id="reservations" aria-labelledby="res-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Join Us</span>
+        <h2 class="section-title" id="res-heading">Reserve Your Table</h2>
+        <p class="section-intro">
+          We seat guests for Lunch (12:00 – 15:00) and Dinner (19:00 – 23:00), Tuesday through Sunday.
+          For parties of 8 or more, please call us directly.
+        </p>
+      </div>
+
+      <div class="reservation-wrap">
+        <form class="reservation-form" id="reservation-form" novalidate aria-label="Table reservation form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-name">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="res-name" name="name" autocomplete="name" required placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label for="res-email">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="res-email" name="email" autocomplete="email" required placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-phone">Phone Number</label>
+              <input type="tel" id="res-phone" name="phone" autocomplete="tel" placeholder="+91 98765 43210" />
+            </div>
+            <div class="form-group">
+              <label for="res-guests">Number of Guests <span aria-hidden="true">*</span></label>
+              <select id="res-guests" name="guests" required>
+                <option value="" disabled selected>Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-date">Preferred Date <span aria-hidden="true">*</span></label>
+              <input type="date" id="res-date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="res-time">Preferred Seating <span aria-hidden="true">*</span></label>
+              <select id="res-time" name="time" required>
+                <option value="" disabled selected>Select seating</option>
+                <optgroup label="Lunch">
+                  <option value="12:00">12:00 PM</option>
+                  <option value="12:30">12:30 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="13:30">1:30 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                </optgroup>
+                <optgroup label="Dinner">
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="form-group form-group--full">
+            <label for="res-occasion">Special Occasion / Dietary Notes</label>
+            <textarea id="res-occasion" name="occasion" rows="3" placeholder="Birthday, anniversary, allergies, preferences…"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-large">Confirm Reservation</button>
+          </div>
+          <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+            <span class="success-icon" aria-hidden="true">✓</span>
+            <p><strong>Reservation Received!</strong> We'll confirm your booking within 2 hours via email. We look forward to welcoming you to Virraaj.</p>
+          </div>
+          <div class="form-error" id="form-error" role="alert" aria-live="polite" hidden>
+            <p>Please fill in all required fields before submitting.</p>
+          </div>
+        </form>
+
+        <aside class="reservation-info" aria-label="Contact and hours information">
+          <div class="info-block">
+            <h3>Opening Hours</h3>
+            <dl>
+              <dt>Tuesday – Thursday</dt><dd>Lunch 12:00–15:00 · Dinner 19:00–23:00</dd>
+              <dt>Friday – Saturday</dt><dd>Lunch 12:00–15:30 · Dinner 19:00–23:30</dd>
+              <dt>Sunday</dt><dd>Brunch 11:00–15:00</dd>
+              <dt>Monday</dt><dd>Closed</dd>
+            </dl>
+          </div>
+          <div class="info-block">
+            <h3>Find Us</h3>
+            <address>
+              42, Empress Road<br/>
+              Bandra West, Mumbai 400050<br/>
+              Maharashtra, India
+            </address>
+          </div>
+          <div class="info-block">
+            <h3>Contact</h3>
+            <p><a href="tel:+912261234567">+91 22 6123 4567</a></p>
+            <p><a href="mailto:reservations@virraaj.in">reservations@virraaj.in</a></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── AI ASSISTANT ───────────────────────── -->
+  <div class="ai-chat-launcher" id="ai-chat-launcher" aria-label="Open AI concierge">
+    <span class="ai-chat-icon" aria-hidden="true">✦</span>
+    <span class="ai-chat-label">AI Concierge</span>
+  </div>
+
+  <div class="ai-chat-window" id="ai-chat-window" role="dialog" aria-modal="true" aria-labelledby="ai-chat-title" hidden>
+    <div class="ai-chat-header">
+      <h3 id="ai-chat-title">Virraaj AI Concierge</h3>
+      <button class="ai-chat-close" id="ai-chat-close" aria-label="Close AI concierge">✕</button>
+    </div>
+    <div class="ai-chat-body" id="ai-chat-body" aria-live="polite" aria-label="Chat messages">
+      <div class="ai-message ai-message--bot">
+        <p>Namaste! 🙏 I'm your personal concierge at Virraaj. I can help you with:</p>
+        <ul>
+          <li>Table reservations</li>
+          <li>Menu recommendations</li>
+          <li>Dietary requirements</li>
+          <li>Special event enquiries</li>
+        </ul>
+        <p>How may I assist you today?</p>
+      </div>
+    </div>
+    <div class="ai-chat-input-row">
+      <input type="text" id="ai-chat-input" class="ai-chat-input" placeholder="Ask me anything…" aria-label="Your message" />
+      <button class="ai-chat-send" id="ai-chat-send" aria-label="Send message">Send</button>
+    </div>
+    <p class="ai-chat-disclaimer">Powered by Virraaj AI · <a href="ai-demo.html">View AI capabilities →</a></p>
+  </div>
+
+  <!-- ───────────────────────── FOOTER ───────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-logo">VIRRAAJ</p>
+          <p class="footer-tagline">Where Heritage Meets Artistry</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+            <a href="#" aria-label="Facebook"  class="social-link">Facebook</a>
+            <a href="#" aria-label="Twitter"   class="social-link">Twitter</a>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Quick Links</h4>
+          <ul role="list">
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#chef">Our Chef</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="ai-demo.html">AI Experiences</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <address>
+            42, Empress Road<br/>
+            Bandra West, Mumbai 400050<br/>
+            Maharashtra, India
+          </address>
+          <p><a href="tel:+912261234567">+91 22 6123 4567</a></p>
+          <p><a href="mailto:reservations@virraaj.in">reservations@virraaj.in</a></p>
+        </div>
+        <div class="footer-awards">
+          <h4>Recognition</h4>
+          <ul role="list" class="award-list">
+            <li>🏆 National Restaurant Awards 2025</li>
+            <li>⭐ Asia's 50 Best Restaurants 2025</li>
+            <li>🍽️ Luxury Hospitality Excellence Award</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Virraaj Fine Dining Pvt. Ltd. · All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> · <a href="#">Terms &amp; Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

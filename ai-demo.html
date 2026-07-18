@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Virraaj AI Orchestration – Explore how AI powers personalised dining, marketing automation, and operational intelligence at Virraaj Fine Dining." />
+  <title>Virraaj | AI Orchestration & Experiences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/ai-demo.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Virraaj home">
+        <span class="logo-text">VIRRAAJ</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="index.html#about"        class="nav-link">Our Story</a></li>
+        <li><a href="index.html#menu"         class="nav-link">Menu</a></li>
+        <li><a href="index.html#chef"         class="nav-link">Chef</a></li>
+        <li><a href="index.html#gallery"      class="nav-link">Gallery</a></li>
+        <li><a href="index.html#events"       class="nav-link">Events</a></li>
+        <li><a href="index.html#reservations" class="nav-link nav-cta">Reserve a Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ────────────────────── AI HERO ────────────────────── -->
+  <section class="ai-hero" aria-labelledby="ai-hero-heading">
+    <div class="ai-hero-content">
+      <div class="ai-hero-badge" aria-label="AI Prototype">
+        <span aria-hidden="true">✦</span> AI Orchestration Platform
+      </div>
+      <h1 class="ai-hero-title" id="ai-hero-heading">
+        Intelligent Hospitality<br/>Powered by AI
+      </h1>
+      <p class="ai-hero-sub">
+        Discover how Virraaj leverages AI orchestration to deliver hyper-personalised dining experiences,
+        automate marketing workflows, and turn guest data into actionable operational intelligence.
+      </p>
+    </div>
+  </section>
+
+  <!-- ────────────────────── USE CASES ────────────────────── -->
+  <section class="section use-cases" aria-labelledby="uc-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">AI Capabilities</span>
+        <h2 class="section-title" id="uc-heading">Use Cases &amp; Features</h2>
+      </div>
+      <div class="use-cases-grid" role="list">
+
+        <!-- Marketing -->
+        <article class="uc-card" role="listitem" aria-labelledby="uc-personalisation">
+          <div class="uc-card-icon" aria-hidden="true">🎯</div>
+          <div class="uc-card-tag">Marketing</div>
+          <h3 id="uc-personalisation">Hyper-Personalised Campaigns</h3>
+          <p>
+            AI segments guests by cuisine preference, visit frequency, spend level, and occasion history.
+            Personalised email and WhatsApp campaigns are generated and timed automatically — driving 3× higher open rates.
+          </p>
+          <div class="uc-card-footer">
+            <span class="uc-status uc-status--live" aria-label="Status: Live"></span>
+            Live · Powered by LLM + CRM Integration
+          </div>
+        </article>
+
+        <article class="uc-card" role="listitem" aria-labelledby="uc-menu-rec">
+          <div class="uc-card-icon" aria-hidden="true">🍽️</div>
+          <div class="uc-card-tag">Guest Experience</div>
+          <h3 id="uc-menu-rec">AI Menu Recommendations</h3>
+          <p>
+            Before each visit, our AI concierge analyses guest preferences, dietary requirements, and seasonal
+            availability to suggest a bespoke course selection — reducing decision fatigue and increasing
+            table-side upsells by 28%.
+          </p>
+          <div class="uc-card-footer">
+            <span class="uc-status uc-status--live" aria-label="Status: Live"></span>
+            Live · Recommendation Engine + RAG
+          </div>
+        </article>
+
+        <article class="uc-card" role="listitem" aria-labelledby="uc-sentiment">
+          <div class="uc-card-icon" aria-hidden="true">💬</div>
+          <div class="uc-card-tag">Reputation Management</div>
+          <h3 id="uc-sentiment">Real-Time Review Sentiment</h3>
+          <p>
+            Continuous monitoring of Google, Zomato, and Instagram reviews. Our AI classifies sentiment,
+            surfaces critical feedback within minutes, and drafts personalised responses for team approval —
+            protecting and building our 4.9-star reputation.
+          </p>
+          <div class="uc-card-footer">
+            <span class="uc-status uc-status--live" aria-label="Status: Live"></span>
+            Live · NLP Sentiment Classification
+          </div>
+        </article>
+
+        <article class="uc-card" role="listitem" aria-labelledby="uc-demand">
+          <div class="uc-card-icon" aria-hidden="true">📊</div>
+          <div class="uc-card-tag">Operations</div>
+          <h3 id="uc-demand">Demand Forecasting</h3>
+          <p>
+            Historical booking data, local events calendar, and weather signals are combined to predict
+            covers 14 days ahead with 92% accuracy — enabling optimal staffing, ingredient purchasing,
+            and waste reduction.
+          </p>
+          <div class="uc-card-footer">
+            <span class="uc-status uc-status--beta" aria-label="Status: Beta"></span>
+            Beta · Time-Series Forecasting Model
+          </div>
+        </article>
+
+        <article class="uc-card" role="listitem" aria-labelledby="uc-pricing">
+          <div class="uc-card-icon" aria-hidden="true">💸</div>
+          <div class="uc-card-tag">Revenue Optimisation</div>
+          <h3 id="uc-pricing">Dynamic Pricing &amp; Yield Management</h3>
+          <p>
+            AI dynamically adjusts prix-fixe menu pricing and private dining rates based on demand, season,
+            and table availability — maximising RevPASH (Revenue per Available Seat Hour) without
+            compromising the guest experience.
+          </p>
+          <div class="uc-card-footer">
+            <span class="uc-status uc-status--beta" aria-label="Status: Beta"></span>
+            Beta · RL-Based Pricing Agent
+          </div>
+        </article>
+
+        <article class="uc-card" role="listitem" aria-labelledby="uc-voice">
+          <div class="uc-card-icon" aria-hidden="true">🎙️</div>
+          <div class="uc-card-tag">Reservations</div>
+          <h3 id="uc-voice">AI Voice Reservation Agent</h3>
+          <p>
+            A conversational AI voice agent handles inbound reservation calls 24/7, answers questions,
+            confirms bookings, and escalates complex requests to human staff — reducing front-of-house
+            call volume by 60%.
+          </p>
+          <div class="uc-card-footer">
+            <span class="uc-status uc-status--planned" aria-label="Status: Planned"></span>
+            Planned · LLM + Voice API
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────── ARCHITECTURE ────────────────────── -->
+  <section class="section architecture" aria-labelledby="arch-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">System Design</span>
+        <h2 class="section-title" id="arch-heading">AI Orchestration Architecture</h2>
+      </div>
+
+      <div class="arch-diagram" role="img" aria-label="AI orchestration architecture diagram">
+
+        <div class="arch-layer">
+          <div class="arch-layer-label">Data Sources</div>
+          <div class="arch-nodes">
+            <div class="arch-node">📋 Reservation System</div>
+            <div class="arch-node">💳 POS &amp; Orders</div>
+            <div class="arch-node">📱 Guest CRM</div>
+            <div class="arch-node">⭐ Review Platforms</div>
+            <div class="arch-node">📅 Events Calendar</div>
+            <div class="arch-node">🌦️ Weather API</div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true">↓</div>
+
+        <div class="arch-layer">
+          <div class="arch-layer-label">Data &amp; Feature Pipeline</div>
+          <div class="arch-nodes">
+            <div class="arch-node">⚙️ ETL / Streaming</div>
+            <div class="arch-node">🗄️ Vector Store (RAG)</div>
+            <div class="arch-node">📊 Feature Store</div>
+            <div class="arch-node">🔐 Data Governance</div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true">↓</div>
+
+        <div class="arch-layer" style="border-color: var(--color-gold);">
+          <div class="arch-layer-label">AI Orchestration Layer</div>
+          <div class="arch-nodes">
+            <div class="arch-node">🤖 LLM Agent (GPT-4o)</div>
+            <div class="arch-node">🎯 Personalisation Engine</div>
+            <div class="arch-node">📈 Forecasting Models</div>
+            <div class="arch-node">💬 Sentiment NLP</div>
+            <div class="arch-node">🔀 Agent Router</div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true">↓</div>
+
+        <div class="arch-layer">
+          <div class="arch-layer-label">Output Channels</div>
+          <div class="arch-nodes">
+            <div class="arch-node">📧 Email Campaigns</div>
+            <div class="arch-node">💬 WhatsApp / SMS</div>
+            <div class="arch-node">🌐 Website Concierge</div>
+            <div class="arch-node">📊 Operations Dashboard</div>
+            <div class="arch-node">📞 Voice Agent</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────── LIVE DEMOS ────────────────────── -->
+  <section class="section demo-section" aria-labelledby="demo-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Prototypes</span>
+        <h2 class="section-title" id="demo-heading">Try It Live</h2>
+      </div>
+
+      <div class="demo-grid">
+
+        <!-- Recommendation Engine Demo -->
+        <div class="demo-panel" aria-labelledby="rec-panel-title">
+          <div class="demo-panel-header">
+            <h3 id="rec-panel-title">🎯 Menu Recommendation Engine</h3>
+            <span class="uc-status uc-status--live" aria-label="Live demo"></span>
+          </div>
+          <div class="demo-panel-body">
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:1rem;">
+              Select your preferences and let our AI curate the perfect dishes for you:
+            </p>
+            <div class="pref-tags" role="group" aria-label="Dietary preferences">
+              <button class="pref-tag" data-pref="vegetarian" aria-pressed="false">🌿 Vegetarian</button>
+              <button class="pref-tag" data-pref="seafood"    aria-pressed="false">🦐 Seafood</button>
+              <button class="pref-tag" data-pref="spicy"      aria-pressed="false">🌶️ Spicy</button>
+              <button class="pref-tag" data-pref="mild"       aria-pressed="false">😌 Mild</button>
+              <button class="pref-tag" data-pref="indulgent"  aria-pressed="false">✨ Indulgent</button>
+              <button class="pref-tag" data-pref="light"      aria-pressed="false">🥗 Light</button>
+            </div>
+            <button class="rec-btn" id="rec-btn" aria-label="Get AI menu recommendations">
+              ✦ Get AI Recommendations
+            </button>
+            <div class="rec-results" id="rec-results" role="list" aria-label="Recommended dishes" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <!-- Sentiment Analysis Demo -->
+        <div class="demo-panel" aria-labelledby="sent-panel-title">
+          <div class="demo-panel-header">
+            <h3 id="sent-panel-title">💬 Review Sentiment Analysis</h3>
+            <span class="uc-status uc-status--live" aria-label="Live demo"></span>
+          </div>
+          <div class="demo-panel-body">
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:1rem;">
+              Click a sample guest review to see real-time AI sentiment scoring:
+            </p>
+            <div class="review-samples" role="list" aria-label="Sample guest reviews">
+              <button class="review-sample" role="listitem"
+                data-pos="92" data-neu="6" data-neg="2"
+                data-summary="Overwhelmingly positive. Guest delighted with food quality and service.">
+                "The lamb raan was absolutely divine — every bite transported me to another era. Chef Arjun's craft is unparalleled. Can't wait to return!"
+              </button>
+              <button class="review-sample" role="listitem"
+                data-pos="45" data-neu="40" data-neg="15"
+                data-summary="Mixed sentiment. Positive on food, neutral on ambience, slight concern on wait time.">
+                "Food was very good, though the wait for our main course was a bit long. The ambience is stunning and cocktails were excellent."
+              </button>
+              <button class="review-sample" role="listitem"
+                data-pos="12" data-neu="18" data-neg="70"
+                data-summary="Predominantly negative. Significant concern about service and value for money.">
+                "Disappointed with the experience. Service felt rushed and portions were smaller than expected for the price point."
+              </button>
+            </div>
+            <div class="sentiment-result" id="sentiment-result" aria-live="polite" aria-label="Sentiment analysis result">
+              <div class="sentiment-score-row">
+                <span class="sentiment-label">Positive</span>
+                <div class="sentiment-bar-wrap"><div class="sentiment-bar sentiment-bar--pos" id="bar-pos"></div></div>
+                <span class="sentiment-pct" id="pct-pos">0%</span>
+              </div>
+              <div class="sentiment-score-row">
+                <span class="sentiment-label">Neutral</span>
+                <div class="sentiment-bar-wrap"><div class="sentiment-bar sentiment-bar--neu" id="bar-neu"></div></div>
+                <span class="sentiment-pct" id="pct-neu">0%</span>
+              </div>
+              <div class="sentiment-score-row">
+                <span class="sentiment-label">Negative</span>
+                <div class="sentiment-bar-wrap"><div class="sentiment-bar sentiment-bar--neg" id="bar-neg"></div></div>
+                <span class="sentiment-pct" id="pct-neg">0%</span>
+              </div>
+              <p class="sentiment-summary" id="sentiment-summary"></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────── MARKETING AUTOMATION ────────────────────── -->
+  <section class="section marketing" aria-labelledby="mktg-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Marketing Orchestration</span>
+        <h2 class="section-title" id="mktg-heading">Automated Guest Journey</h2>
+        <p class="section-intro">
+          From first enquiry to loyal advocate — every touchpoint is intelligently orchestrated.
+        </p>
+      </div>
+
+      <ol class="automation-timeline" aria-label="Automated guest journey timeline">
+
+        <li class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true">🔍</div>
+          <div class="timeline-content">
+            <h4>Discovery &amp; Acquisition</h4>
+            <p>AI analyses search intent, social engagement, and lookalike audiences to run hyper-targeted Instagram, Google, and Zomato campaigns — attracting the right guests at the right moment.</p>
+            <span class="timeline-trigger">⚡ Trigger: New audience segment identified</span>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true">📧</div>
+          <div class="timeline-content">
+            <h4>Pre-Visit Personalisation</h4>
+            <p>48 hours before each reservation, AI sends a bespoke welcome email with personalised menu highlights, drink pairings, and the evening's chef specials — all tailored to the guest's taste profile.</p>
+            <span class="timeline-trigger">⚡ Trigger: Reservation confirmed + 48h before visit</span>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true">🍽️</div>
+          <div class="timeline-content">
+            <h4>In-Experience Intelligence</h4>
+            <p>Real-time table analytics alert front-of-house staff to milestone moments (anniversaries, birthdays), dietary preferences, and service timing — enabling proactive and genuinely personal hospitality.</p>
+            <span class="timeline-trigger">⚡ Trigger: Guest seated + occasion flags detected</span>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true">⭐</div>
+          <div class="timeline-content">
+            <h4>Post-Visit Engagement</h4>
+            <p>2 hours after dining, guests receive an AI-crafted thank-you message with a personalised review invitation, recipe card, or cocktail guide. NPS score is captured and routed for action.</p>
+            <span class="timeline-trigger">⚡ Trigger: Bill settled + 2 hours elapsed</span>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true">🔄</div>
+          <div class="timeline-content">
+            <h4>Loyalty &amp; Re-Engagement</h4>
+            <p>AI monitors visit cadence and sends tailored win-back campaigns when a loyal guest hasn't visited in 45+ days — offering exclusive chef's table access, seasonal menu previews, or curated gift experiences.</p>
+            <span class="timeline-trigger">⚡ Trigger: 45+ days since last visit for loyal guest</span>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ────────────────────── CTA ────────────────────── -->
+  <section class="section" style="background: var(--color-bg); text-align: center;" aria-labelledby="cta-heading">
+    <div class="container">
+      <span class="section-tag">Join the Experience</span>
+      <h2 class="section-title" id="cta-heading" style="margin-bottom: var(--space-md);">Ready to Experience Virraaj?</h2>
+      <p style="color: var(--color-text-muted); max-width: 520px; margin-inline: auto; margin-bottom: var(--space-lg); font-size: 0.95rem;">
+        From our AI-powered concierge to Chef Arjun's extraordinary cuisine — every detail is crafted for you.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a href="index.html#reservations" class="btn btn-primary">Reserve a Table</a>
+        <a href="index.html" class="btn btn-ghost">Back to Restaurant</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────── FOOTER ────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-logo">VIRRAAJ</p>
+          <p class="footer-tagline">Where Heritage Meets Artistry</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+            <a href="#" aria-label="Facebook"  class="social-link">Facebook</a>
+            <a href="#" aria-label="Twitter"   class="social-link">Twitter</a>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Quick Links</h4>
+          <ul role="list">
+            <li><a href="index.html#about">Our Story</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#chef">Our Chef</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#reservations">Reservations</a></li>
+            <li><a href="ai-demo.html">AI Experiences</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <address>
+            42, Empress Road<br/>
+            Bandra West, Mumbai 400050<br/>
+            Maharashtra, India
+          </address>
+          <p><a href="tel:+912261234567">+91 22 6123 4567</a></p>
+          <p><a href="mailto:reservations@virraaj.in">reservations@virraaj.in</a></p>
+        </div>
+        <div class="footer-awards">
+          <h4>AI Stack</h4>
+          <ul role="list" class="award-list">
+            <li>🤖 GPT-4o (Azure OpenAI)</li>
+            <li>🔍 RAG + Vector Search</li>
+            <li>📊 Custom ML Models</li>
+            <li>⚙️ LangChain Orchestration</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Virraaj Fine Dining Pvt. Ltd. · All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> · <a href="#">Terms &amp; Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/ai-demo.js"></script>
+</body>
+</html>
